@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="js/scripts.js"></script>
+
+    </head>
+    <body>        
+        <nav>
+            <div class="nav-wrapper #212121 grey darken-4">
+                <!--<a href="#!" class="brand-logo">Logo</a>-->
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#modal1" class="modal-trigger">Iniciar Sesión</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#modal1" class="modal-trigger">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col l1 m6 s6"></div>
+                    <div id="NewUser" class="col l10 m6 s6">
+                        <h4>Iniciar Sesión</h4>
+                        <form>
+                            email: <input id="email" type="email" placeholder="Ingrese el correo" required="">
+                            contraseña: <input id="password" type="password" placeholder="ingrese la contraseña" required="">
+                            <button class="waves-effect waves-light btn" onclick="validateUser()">Iniciar Sesión</button>
+                        </form>
+                    </div>
+                    <div class="col l1 m6 s6"></div>
+                </div>
+            </div>
+
+        <!-- 
+        <div id="NewUser2" class="carousel">
+        <a class="carousel-item" href="#one!"><img src="images/1.png"></a>
+        <a class="carousel-item" href="#two!"><img src="images/2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/3.png"></a>
+        <a class="carousel-item" href="#four!"><img src="images/3.png"></a>
+        </div>
+        
+        -->
+
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <script>
+                                $(document).ready(function () {
+                                    $(".button-collapse").sideNav();
+                                });
+
+                                $(document).ready(function () {
+                                    $('.modal').modal();
+                                });
+
+                                $(document).ready(function () {
+                                    $('.carousel').carousel();
+                                });
+        </script>
+
+
+        <footer class="page-footer #212121 grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Taller Electiva II</h5>
+                        <p class="grey-text text-lighten-4">Presentación del taller Trabjo con Repositorios</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Integrantes</h5>
+                        <p class="grey-text text-lighten-4">Caren Corredor Cadena</p>
+                        <p class="grey-text text-lighten-4">Miguel Angel Vargas Rodriguez</p>
+                        <p class="grey-text text-lighten-4">Carlos Alberto Zambrano Braydi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Copyright
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+
+</html>
